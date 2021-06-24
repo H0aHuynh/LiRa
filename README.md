@@ -3,7 +3,6 @@
 Thực hiện trên mã nguồn TQ-pre-jailbreak
 # Tình trạng
 
-* Quản lý gói: Cydia và LiStore
 * Khai thác: cicuta_virosa (iOS 13.0 - 14.3)
 * Thăng cấp đặc quyền (tới root): Đang làm việc
 * Remount: Đã hoạt động
