@@ -1,5 +1,6 @@
 # LiRa
 **LiRa** jailbreak cho iOS 13.0 - 14.3 tất cả thiết bị.
+
 Thực hiện trên mã nguồn TQ-pre-jailbreak
 # Tình trạng
 
