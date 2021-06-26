@@ -10,7 +10,7 @@ Thực hiện trên mã nguồn TQ-pre-jailbreak
 * SSH: Đã hoạt động
 * Amfid: Đã hoạt động 
 
-Vui lòng chờ cập nhật dự án
+Vui lòng chờ cập nhật dự án LiRa jailbreak hoàn toàn
 
 # Cảm ơn
 
