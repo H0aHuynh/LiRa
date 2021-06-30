@@ -13,7 +13,6 @@
 		206CF5E125DF544100B8A97F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206CF5DF25DF544100B8A97F /* LaunchScreen.storyboard */; };
 		206CF5E425DF544200B8A97F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 206CF5E325DF544200B8A97F /* main.m */; };
 		206CF5FB25DF58D800B8A97F /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF5ED25DF58D700B8A97F /* utils.c */; };
-		206CF5FC25DF58D800B8A97F /* post_exploit.m in Sources */ = {isa = PBXBuildFile; fileRef = 206CF5EE25DF58D700B8A97F /* post_exploit.m */; };
 		206CF5FD25DF58D800B8A97F /* k_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF5EF25DF58D700B8A97F /* k_utils.c */; };
 		206CF5FE25DF58D800B8A97F /* IOSurface_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF5F225DF58D700B8A97F /* IOSurface_lib.c */; };
 		206CF5FF25DF58D800B8A97F /* sys_darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF5F425DF58D700B8A97F /* sys_darwin.c */; };
@@ -21,13 +20,21 @@
 		206CF60125DF58D800B8A97F /* kapi_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF5F825DF58D800B8A97F /* kapi_memory.c */; };
 		206CF60225DF58D800B8A97F /* user_kernel_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF5FA25DF58D800B8A97F /* user_kernel_alloc.c */; };
 		206CF60925DF597800B8A97F /* IOKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 206CF60825DF597800B8A97F /* IOKit.tbd */; };
-		206CF60E25DF5BE400B8A97F /* exploit_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF60D25DF5BE400B8A97F /* exploit_main.c */; };
 		206CF61D25DF5C9C00B8A97F /* descriptors_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF61125DF5C9C00B8A97F /* descriptors_utils.c */; };
 		206CF61E25DF5C9C00B8A97F /* cicuta_log.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF61225DF5C9C00B8A97F /* cicuta_log.c */; };
 		206CF61F25DF5C9C00B8A97F /* exploit_utilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF61425DF5C9C00B8A97F /* exploit_utilities.c */; };
 		206CF62025DF5C9C00B8A97F /* fake_element_spray.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF61525DF5C9C00B8A97F /* fake_element_spray.c */; };
 		206CF62125DF5C9C00B8A97F /* voucher_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF61725DF5C9C00B8A97F /* voucher_utils.c */; };
 		206CF62225DF5C9C00B8A97F /* cicuta_virosa.c in Sources */ = {isa = PBXBuildFile; fileRef = 206CF61825DF5C9C00B8A97F /* cicuta_virosa.c */; };
+		4F269F642688A73D0059B322 /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F269F622688A73C0059B322 /* patchfinder64.c */; };
+		4F269F652688A73D0059B322 /* newpatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F269F632688A73D0059B322 /* newpatch.c */; };
+		4F269F6F2688A7D30059B322 /* decoders.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F269F6D2688A7D20059B322 /* decoders.c */; };
+		4F269F702688A7D30059B322 /* instructions.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F269F6E2688A7D30059B322 /* instructions.c */; };
+		4F7ED281268C59EF00FDE21F /* SetNonceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F7ED280268C59EF00FDE21F /* SetNonceViewController.m */; };
+		4FA6CC59268C49BE002D47DE /* RobotoMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FA6CC57268C49BE002D47DE /* RobotoMono-Bold.ttf */; };
+		4FA6CC5A268C49BE002D47DE /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FA6CC58268C49BE002D47DE /* RobotoMono-Regular.ttf */; };
+		4FA6CC67268C4F76002D47DE /* post_exploit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6CC65268C4F76002D47DE /* post_exploit.m */; };
+		4FA6CC68268C4F76002D47DE /* exploit_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6CC66268C4F76002D47DE /* exploit_main.c */; };
 		4FE91CC42682C7E600C20679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE91CC32682C7E500C20679 /* Assets.xcassets */; };
 		4FE91CC72682C7EF00C20679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE91CC62682C7EF00C20679 /* Main.storyboard */; };
 		4FE91CCA2682C81000C20679 /* checkinfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE91CC92682C80F00C20679 /* checkinfo.m */; };
@@ -50,7 +57,6 @@
 		206CF5E225DF544200B8A97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		206CF5E325DF544200B8A97F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		206CF5ED25DF58D700B8A97F /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
-		206CF5EE25DF58D700B8A97F /* post_exploit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = post_exploit.m; sourceTree = "<group>"; };
 		206CF5EF25DF58D700B8A97F /* k_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = k_utils.c; sourceTree = "<group>"; };
 		206CF5F025DF58D700B8A97F /* k_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = k_utils.h; sourceTree = "<group>"; };
 		206CF5F125DF58D700B8A97F /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
@@ -64,7 +70,6 @@
 		206CF5F925DF58D800B8A97F /* mycommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mycommon.h; sourceTree = "<group>"; };
 		206CF5FA25DF58D800B8A97F /* user_kernel_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = user_kernel_alloc.c; sourceTree = "<group>"; };
 		206CF60825DF597800B8A97F /* IOKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = IOKit.tbd; path = IOKit/IOKit.tbd; sourceTree = "<group>"; };
-		206CF60D25DF5BE400B8A97F /* exploit_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = exploit_main.c; sourceTree = "<group>"; };
 		206CF61125DF5C9C00B8A97F /* descriptors_utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = descriptors_utils.c; sourceTree = "<group>"; };
 		206CF61225DF5C9C00B8A97F /* cicuta_log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cicuta_log.c; sourceTree = "<group>"; };
 		206CF61325DF5C9C00B8A97F /* cicuta_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cicuta_log.h; sourceTree = "<group>"; };
@@ -77,6 +82,26 @@
 		206CF61A25DF5C9C00B8A97F /* cicuta_virosa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cicuta_virosa.h; sourceTree = "<group>"; };
 		206CF61B25DF5C9C00B8A97F /* descriptors_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptors_utils.h; sourceTree = "<group>"; };
 		206CF61C25DF5C9C00B8A97F /* exploit_utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exploit_utilities.h; sourceTree = "<group>"; };
+		4F0826822688B8F900CADC56 /* iokit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iokit.h; sourceTree = "<group>"; };
+		4F0826832688B94600CADC56 /* MobileGestalt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileGestalt.h; sourceTree = "<group>"; };
+		4F269F612688A6F20059B322 /* patchfinder64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = patchfinder64.h; sourceTree = "<group>"; };
+		4F269F622688A73C0059B322 /* patchfinder64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = patchfinder64.c; sourceTree = "<group>"; };
+		4F269F632688A73D0059B322 /* newpatch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = newpatch.c; sourceTree = "<group>"; };
+		4F269F672688A74E0059B322 /* newpatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newpatch.h; sourceTree = "<group>"; };
+		4F269F682688A7C60059B322 /* mach-o_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mach-o_loader.h"; sourceTree = "<group>"; };
+		4F269F692688A7C60059B322 /* instructions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = instructions.h; sourceTree = "<group>"; };
+		4F269F6A2688A7C60059B322 /* mach-o_nlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mach-o_nlist.h"; sourceTree = "<group>"; };
+		4F269F6B2688A7C70059B322 /* decoders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decoders.h; sourceTree = "<group>"; };
+		4F269F6C2688A7C70059B322 /* mac_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mac_policy.h; sourceTree = "<group>"; };
+		4F269F6D2688A7D20059B322 /* decoders.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decoders.c; sourceTree = "<group>"; };
+		4F269F6E2688A7D30059B322 /* instructions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = instructions.c; sourceTree = "<group>"; };
+		4F7ED27F268C59EF00FDE21F /* SetNonceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetNonceViewController.h; sourceTree = "<group>"; };
+		4F7ED280268C59EF00FDE21F /* SetNonceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetNonceViewController.m; sourceTree = "<group>"; };
+		4FA6CC55268C4390002D47DE /* jelbrekLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jelbrekLib.h; sourceTree = "<group>"; };
+		4FA6CC57268C49BE002D47DE /* RobotoMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Bold.ttf"; sourceTree = "<group>"; };
+		4FA6CC58268C49BE002D47DE /* RobotoMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Regular.ttf"; sourceTree = "<group>"; };
+		4FA6CC65268C4F76002D47DE /* post_exploit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = post_exploit.m; path = "exploit-main/post_exploit.m"; sourceTree = SOURCE_ROOT; };
+		4FA6CC66268C4F76002D47DE /* exploit_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = exploit_main.c; path = "exploit-main/exploit_main.c"; sourceTree = SOURCE_ROOT; };
 		4FE91CC32682C7E500C20679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE91CC62682C7EF00C20679 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4FE91CC92682C80F00C20679 /* checkinfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = checkinfo.m; sourceTree = "<group>"; };
@@ -105,6 +130,7 @@
 		206CF5C525DF543F00B8A97F = {
 			isa = PBXGroup;
 			children = (
+				4FA6CC28268C33C0002D47DE /* kairos */,
 				D505AAE42631B94300D87164 /* Resources */,
 				206CF5EC25DF58B200B8A97F /* mylib */,
 				206CF60B25DF5B0200B8A97F /* exploit-main */,
@@ -130,6 +156,8 @@
 				206CF5D225DF543F00B8A97F /* AppDelegate.m */,
 				206CF5D425DF543F00B8A97F /* SceneDelegate.h */,
 				206CF5D525DF543F00B8A97F /* SceneDelegate.m */,
+				4F7ED27F268C59EF00FDE21F /* SetNonceViewController.h */,
+				4F7ED280268C59EF00FDE21F /* SetNonceViewController.m */,
 				206CF5D725DF543F00B8A97F /* ViewController.h */,
 				206CF5D825DF543F00B8A97F /* ViewController.m */,
 				4FE91CC62682C7EF00C20679 /* Main.storyboard */,
@@ -144,12 +172,12 @@
 		206CF5EC25DF58B200B8A97F /* mylib */ = {
 			isa = PBXGroup;
 			children = (
-				4FE91CC92682C80F00C20679 /* checkinfo.m */,
+				4FA6CC55268C4390002D47DE /* jelbrekLib.h */,
+				4F0826822688B8F900CADC56 /* iokit.h */,
 				D505AADB263156F800D87164 /* amfi.h */,
 				D505AADC263156F800D87164 /* amfi.m */,
+				4FE91CC92682C80F00C20679 /* checkinfo.m */,
 				D505AAEA2631C05000D87164 /* cs_blob.h */,
-				D505AAD7263128DA00D87164 /* remount.m */,
-				D505AAD6263128DA00D87164 /* remount.h */,
 				206CF5F225DF58D700B8A97F /* IOSurface_lib.c */,
 				206CF5F525DF58D700B8A97F /* k_offsets.c */,
 				206CF5F625DF58D700B8A97F /* k_offsets.h */,
@@ -158,6 +186,8 @@
 				206CF5F825DF58D800B8A97F /* kapi_memory.c */,
 				206CF5F325DF58D700B8A97F /* kapi.h */,
 				206CF5F925DF58D800B8A97F /* mycommon.h */,
+				D505AAD6263128DA00D87164 /* remount.h */,
+				D505AAD7263128DA00D87164 /* remount.m */,
 				206CF5F425DF58D700B8A97F /* sys_darwin.c */,
 				206CF5FA25DF58D800B8A97F /* user_kernel_alloc.c */,
 				206CF5F725DF58D700B8A97F /* user_kernel_alloc.h */,
@@ -185,9 +215,9 @@
 		206CF60B25DF5B0200B8A97F /* exploit-main */ = {
 			isa = PBXGroup;
 			children = (
+				4FA6CC66268C4F76002D47DE /* exploit_main.c */,
+				4FA6CC65268C4F76002D47DE /* post_exploit.m */,
 				206CF60C25DF5B8E00B8A97F /* cicuta_virosa */,
-				206CF60D25DF5BE400B8A97F /* exploit_main.c */,
-				206CF5EE25DF58D700B8A97F /* post_exploit.m */,
 			);
 			path = "exploit-main";
 			sourceTree = "<group>";
@@ -211,12 +241,33 @@
 			path = cicuta_virosa;
 			sourceTree = "<group>";
 		};
+		4FA6CC28268C33C0002D47DE /* kairos */ = {
+			isa = PBXGroup;
+			children = (
+				4F0826832688B94600CADC56 /* MobileGestalt.h */,
+				4F269F6B2688A7C70059B322 /* decoders.h */,
+				4F269F6D2688A7D20059B322 /* decoders.c */,
+				4F269F692688A7C60059B322 /* instructions.h */,
+				4F269F6E2688A7D30059B322 /* instructions.c */,
+				4F269F6C2688A7C70059B322 /* mac_policy.h */,
+				4F269F682688A7C60059B322 /* mach-o_loader.h */,
+				4F269F6A2688A7C60059B322 /* mach-o_nlist.h */,
+				4F269F612688A6F20059B322 /* patchfinder64.h */,
+				4F269F622688A73C0059B322 /* patchfinder64.c */,
+				4F269F672688A74E0059B322 /* newpatch.h */,
+				4F269F632688A73D0059B322 /* newpatch.c */,
+			);
+			path = kairos;
+			sourceTree = "<group>";
+		};
 		D505AAE42631B94300D87164 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				4FE922BA2682CD1F00C20679 /* jb_resources */,
 				D505AAE52631B95C00D87164 /* helloworld */,
 				D505AAF22631CAAE00D87164 /* rootfs */,
+				4FA6CC57268C49BE002D47DE /* RobotoMono-Bold.ttf */,
+				4FA6CC58268C49BE002D47DE /* RobotoMono-Regular.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -282,7 +333,9 @@
 				206CF5E125DF544100B8A97F /* LaunchScreen.storyboard in Resources */,
 				4FE91CC42682C7E600C20679 /* Assets.xcassets in Resources */,
 				4FE922BB2682CD1F00C20679 /* jb_resources in Resources */,
+				4FA6CC59268C49BE002D47DE /* RobotoMono-Bold.ttf in Resources */,
 				D505AAE62631B95C00D87164 /* helloworld in Resources */,
+				4FA6CC5A268C49BE002D47DE /* RobotoMono-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,22 +352,27 @@
 				206CF61D25DF5C9C00B8A97F /* descriptors_utils.c in Sources */,
 				D505AADD263156F800D87164 /* amfi.m in Sources */,
 				206CF60125DF58D800B8A97F /* kapi_memory.c in Sources */,
+				4F269F6F2688A7D30059B322 /* decoders.c in Sources */,
 				206CF61F25DF5C9C00B8A97F /* exploit_utilities.c in Sources */,
 				206CF5D925DF543F00B8A97F /* ViewController.m in Sources */,
 				206CF61E25DF5C9C00B8A97F /* cicuta_log.c in Sources */,
+				4FA6CC68268C4F76002D47DE /* exploit_main.c in Sources */,
 				206CF5FD25DF58D800B8A97F /* k_utils.c in Sources */,
 				206CF5D325DF543F00B8A97F /* AppDelegate.m in Sources */,
 				206CF5FF25DF58D800B8A97F /* sys_darwin.c in Sources */,
-				206CF5FC25DF58D800B8A97F /* post_exploit.m in Sources */,
 				D505AAD8263128DA00D87164 /* remount.m in Sources */,
 				4FE91CCA2682C81000C20679 /* checkinfo.m in Sources */,
 				206CF62225DF5C9C00B8A97F /* cicuta_virosa.c in Sources */,
+				4F269F652688A73D0059B322 /* newpatch.c in Sources */,
 				206CF60025DF58D800B8A97F /* k_offsets.c in Sources */,
 				206CF5E425DF544200B8A97F /* main.m in Sources */,
 				206CF5D625DF543F00B8A97F /* SceneDelegate.m in Sources */,
+				4FA6CC67268C4F76002D47DE /* post_exploit.m in Sources */,
+				4F269F642688A73D0059B322 /* patchfinder64.c in Sources */,
 				206CF62025DF5C9C00B8A97F /* fake_element_spray.c in Sources */,
+				4F7ED281268C59EF00FDE21F /* SetNonceViewController.m in Sources */,
 				206CF5FE25DF58D800B8A97F /* IOSurface_lib.c in Sources */,
-				206CF60E25DF5BE400B8A97F /* exploit_main.c in Sources */,
+				4F269F702688A7D30059B322 /* instructions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +523,7 @@
 					"$(PROJECT_DIR)/Resources/jb_resources/binpack64/usr/local/lib",
 					"$(PROJECT_DIR)/Resources/jb_resources/binpack64/usr/lib",
 					"$(PROJECT_DIR)/Resources/jb_resources/binpack64/usr/lib/_ncurses",
+					"$(PROJECT_DIR)/Resources",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoahuynh.lirateam;
@@ -494,6 +553,7 @@
 					"$(PROJECT_DIR)/Resources/jb_resources/binpack64/usr/local/lib",
 					"$(PROJECT_DIR)/Resources/jb_resources/binpack64/usr/lib",
 					"$(PROJECT_DIR)/Resources/jb_resources/binpack64/usr/lib/_ncurses",
+					"$(PROJECT_DIR)/Resources",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hoahuynh.lirateam;

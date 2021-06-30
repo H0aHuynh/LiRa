@@ -30,7 +30,7 @@
 
 #define CS_CDHASH_LEN 20
 #define I6S_14_3_AMFID_RET 0x35C8
-#define I6S_14_3_AMFID_RET 0x4C0B
+#define I7P_14_0_AMFID_RET 0x4C0B
 
 typedef struct {
     mach_msg_header_t Head;
@@ -38,7 +38,7 @@ typedef struct {
     mach_msg_port_descriptor_t thread;
     mach_msg_port_descriptor_t task;
     NDR_record_t NDR;
-} exception_raise_request; // Những bits chúng ta cần ít nhất
+} exception_raise_request;
 
 typedef struct {
   mach_msg_header_t Head;
@@ -103,7 +103,7 @@ uint8_t *getCodeDirectory(const char* name) {
         fclose(fd);
         return NULL;
     }
-    else if (magic == 0xBEBAFECA) { //Phép thuật nhị phân FAT
+    else if (magic == 0xBEBAFECA) {
         
         size_t header_size = sizeof(struct fat_header);
         size_t arch_size = sizeof(struct fat_arch);
@@ -175,7 +175,7 @@ static unsigned int hash_rank(const CodeDirectory *cd)
     for (n = 0; n < sizeof(hashPriorities) / sizeof(hashPriorities[0]); ++n)
         if (hashPriorities[n] == type)
             return n + 1;
-    return 0;    /* Không hộ trợ */
+    return 0;
 }
 
 int get_hash(const CodeDirectory* directory, uint8_t dst[CS_CDHASH_LEN]) {
@@ -391,7 +391,6 @@ void takeoverAmfid(int amfidPid) {
     }
     util_info("MISVSACI nguyên thuỷ: 0x%llx\n", origAMFID_MISVSACI);
     
-    //  Làm cho amfi sụp đổ
     retVal = vm_protect(amfid_task_port, mach_vm_trunc_page(loadAddress + patchOffset), vm_page_size, false, VM_PROT_READ | VM_PROT_WRITE);
     if(retVal != KERN_SUCCESS) {
         util_error("Failed vm_protect: %s", mach_error_string(retVal));

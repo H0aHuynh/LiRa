@@ -35,14 +35,14 @@ char *Build_resource_path(char *filename)
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.goButton.layer.cornerRadius = 15;
-    
+    self.goButton.backgroundColor = UIColor.lightGrayColor;
     
     sharedController = self;
     self.textView.text = @"";
 
     self.textView.textContainer.lineBreakMode = NSLineBreakByCharWrapping;
     [self.goButton setEnabled:FALSE];
-    self.goButton.backgroundColor = UIColor.lightGrayColor;
+  
 
     log_UI = log_toView;
 
